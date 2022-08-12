@@ -653,7 +653,7 @@ export const deployStaticATokenLM = async (
   const staticATokenImplementation = await withSaveAndVerify(
     await new StaticATokenLMFactory(await getFirstSigner()).deploy(),
     eContractid.StaticATokenLM,
-    args,
+    [],
     verify
   );
 
