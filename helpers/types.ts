@@ -11,6 +11,7 @@ export enum eEthereumNetwork {
   kovan = 'kovan',
   ropsten = 'ropsten',
   main = 'main',
+  goerli = 'goerli',
   coverage = 'coverage',
   hardhat = 'hardhat',
   tenderlyMain = 'tenderlyMain',
@@ -29,6 +30,7 @@ export enum EthereumNetworkNames {
   kovan = 'kovan',
   ropsten = 'ropsten',
   main = 'main',
+  goerli = 'goerli',
   matic = 'matic',
   mumbai = 'mumbai',
   xdai = 'xdai',
@@ -410,6 +412,7 @@ export interface iEthereumParamsPerNetwork<T> {
   [eEthereumNetwork.kovan]: T;
   [eEthereumNetwork.ropsten]: T;
   [eEthereumNetwork.main]: T;
+  [eEthereumNetwork.goerli]: T;
   [eEthereumNetwork.hardhat]: T;
   [eEthereumNetwork.tenderlyMain]: T;
 }
