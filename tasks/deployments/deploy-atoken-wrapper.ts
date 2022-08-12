@@ -1,5 +1,5 @@
 import { task } from 'hardhat/config';
-import { deployStaticAToken, deployStaticATokenLM } from '../../helpers/contracts-deployments';
+import { deployStaticATokenLM } from '../../helpers/contracts-deployments';
 import { getFirstSigner } from '../../helpers/contracts-getters';
 import { IERC20Detailed } from '../../types/IERC20Detailed';
 import { IERC20DetailedFactory } from '../../types/IERC20DetailedFactory';
