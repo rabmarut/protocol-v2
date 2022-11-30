@@ -50,7 +50,11 @@ docker-compose exec contracts-env bash
 
 # A new Bash terminal is prompted, connected to the container
 npm run compile
-npx hardhat --network <network_name> deploy-atoken-wrapper --pool <pool_address> --a-token-address <atoken_address> --proxy-admin <admin_address> --verify
+npx hardhat --network <network_name> deploy-atoken-wrapper \\
+--a-token-address <atoken_address> \\
+--pool <pool_address> \\
+--proxy-admin <admin_address> \\
+--verify
 ```
 
 - `<network_name>` should be something like `main` or `goerli`.
@@ -62,8 +66,8 @@ Here is an example command to deploy `waDAI` to Ethereum mainnet:
 
 ```
 npx hardhat --network main deploy-atoken-wrapper \\
---pool 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 \\
 --a-token-address 0x028171bCA77440897B824Ca71D1c56caC55b68A3 \\
+--pool 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 \\
 --proxy-admin 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5 \\
 --verify
 ```
