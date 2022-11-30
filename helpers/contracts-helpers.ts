@@ -108,7 +108,8 @@ export const withSaveAndVerify = async <ContractType extends Contract>(
   await waitForTx(instance.deployTransaction);
   await registerContractInJsonDb(id, instance);
   if (verify) {
-    await verifyContract(id, instance, args);
+    // Rab removed await to fix failing API response
+    verifyContract(id, instance, args);
   }
   return instance;
 };
