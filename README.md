@@ -39,7 +39,7 @@ ETHERSCAN_KEY=""
 
 ## Deploy StaticAToken
 
-You can deploy a StaticAToken with the following commands:
+You can deploy a `StaticAToken` with the following commands:
 
 ```
 # In one terminal
@@ -53,7 +53,7 @@ npm run compile
 npx hardhat --network <network_name> deploy-atoken-wrapper --pool <pool_address> --a-token-address <atoken_address> --proxy-admin <admin_address> --verify
 ```
 
-- `<network_name>` should be something like `mainnet` or `goerli`.
+- `<network_name>` should be something like `main` or `goerli`.
 - `<atoken_address>` represents the aToken for which you would like to deploy a static wrapper.
 - `<pool_address>` is the lending pool for the chosen aToken: this must match the output of `<atoken_address>.POOL()`.
 - `<admin_address>` is account who will have permission to upgrade the proxy's implementation - this is a highly privileged entity!
