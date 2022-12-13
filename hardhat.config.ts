@@ -24,8 +24,8 @@ import 'solidity-coverage';
 
 const SKIP_LOAD = process.env.SKIP_LOAD === 'true';
 const DEFAULT_BLOCK_GAS_LIMIT = 12450000;
-const DEFAULT_GAS_MUL = 5;
-const DEFAULT_GAS_PRICE = 65000000000;
+const DEFAULT_GAS_MUL = 1.2;
+const DEFAULT_GAS_PRICE = 20000000000;
 const HARDFORK = 'istanbul';
 const INFURA_KEY = process.env.INFURA_KEY || '';
 const ALCHEMY_KEY = process.env.ALCHEMY_KEY || '';
